@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-06-03T10:12:11+05:30</updated><id>http://localhost:4000/</id><title type="html">Yash Agrawal’s Blog</title><subtitle>Developer. Data Science. Open Source Enthusiast.</subtitle><entry><title type="html">GSoC Blog - Week 1</title><link href="http://localhost:4000/gsoc-w1" rel="alternate" type="text/html" title="GSoC Blog - Week 1" /><published>2017-07-27T15:30:00+05:30</published><updated>2017-07-27T15:30:00+05:30</updated><id>http://localhost:4000/gsoc-w1</id><content type="html" xml:base="http://localhost:4000/gsoc-w1">&lt;p&gt;This is my second blog GSoC blog which focuses on the workflow involved to porting a activity to gtk+ 3.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;As the world changes, Sugar cannot stand still. If the platforms we depend upon drop support for the version tools we are using, then we have to either take over maintenance of these tools ourselves as proposed, update our work so that it remains compatible. The migration to GTK-3 is critical.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;As the project description says “GTK+ 2 and GStreamer 0.10 are end of life. We need to upgrade the remaining activities with these dependencies.”, we need to upgrade the Sugar activities to maintain its support and get security update on various platforms. The movement from PyGTK to PyGObject API means no more maintenance of it. GTK+ 3 is a major new version of GTK+ that breaks both API and ABI compared to GTK+ 2, which has remained API- and ABI-stable for a long time. The main purpose of this project is to port dependencies of 25 Sugar activities from “GTK+ 2 and GStreamer 0.10” to “GTK+ 3 and GStreamer 1.0”. The task will be accompanied by updating to the latest version of sugargame and Sugar Toolkit. GTK+ 3 introduced many changes to improve UI by providing a number of new widgets, switches, toolbars etc. A lot of other changes have also been introduced, to name a few: Use of Cairo for Drawing, Use of GtkBox, Removal of HippoCanvas library and many more.&lt;/p&gt;
+
+&lt;p&gt;The import of pygtk should be changed to import gi. All the codes which includes gtk should be replaced by Gtk. And there is no gtk.gdk library maintained by the developers so you should replace gtk.gdk with Gdk. All the imports should be changed from &lt;code class=&quot;highlighter-rouge&quot;&gt;import gtk&lt;/code&gt; to from &lt;code class=&quot;highlighter-rouge&quot;&gt;gi.repository import Gtk&lt;/code&gt;. All the imports from sugar should be changed to sugar3. As sugar3 toolkit is based on Gtk3 and sugar toolkit was based on gtk2 so Use sugar3 toolkit.&lt;/p&gt;
+
+&lt;p&gt;For example :&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;– import pygtk
+– pygtk.require(‘2.0‘)
+– import gtk
+– from sugar.graphics import style
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;should be replaced by :&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;+ import gi
++ gi.require_version(“Gtk“, “3.0“)
++ from gi.repository import Gdk
++ from gi.repository import Gtk
++ from sugar3.graphics import style
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Hbox, Vbox, pack_start, pack_end : This method pack_start, end takes 4 parameters :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;widget to pack&lt;/li&gt;
+  &lt;li&gt;expand&lt;/li&gt;
+  &lt;li&gt;fill&lt;/li&gt;
+  &lt;li&gt;padding&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Earlier in pygtk it was optional to specify every parameter. If not specified default values were used. But in Gtk3 it is complusory to specify all the 4 parameters. So while porting to Gtk3 if a parameter is not specified in pygtk you can add that parameter and put the default value to it.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;If expand was not set, use value True&lt;/li&gt;
+  &lt;li&gt;If fill was not set, use value True.&lt;/li&gt;
+  &lt;li&gt;If padding was not set, use value 0.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For example :
+&lt;code class=&quot;highlighter-rouge&quot;&gt;– box.pack_start(widget, True, False)&lt;/code&gt;
+Should be changed to :
+&lt;code class=&quot;highlighter-rouge&quot;&gt;+ box.pack_start(widget, expand=True, fill=False, padding=4)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;A great guide for porting to gtk+ 3 can be found in sugar-docs.&lt;/p&gt;</content><author><name>Yash Agrawal</name></author><category term="Gsoc" /><summary type="html">This is my second blog GSoC blog which focuses on the workflow involved to porting a activity to gtk+ 3.</summary></entry><entry><title type="html">GSoC’ 18 with Sugar Labs</title><link href="http://localhost:4000/gsoc-welcome" rel="alternate" type="text/html" title="GSoC’ 18 with Sugar Labs" /><published>2017-07-27T15:30:00+05:30</published><updated>2017-07-27T15:30:00+05:30</updated><id>http://localhost:4000/gsoc-welcome</id><content type="html" xml:base="http://localhost:4000/gsoc-welcome">&lt;p&gt;Wohoo! I have been selected in Google Summer of Code 2018.&lt;/p&gt;
+
+&lt;p&gt;I am very excited to work with Sugar Labs this summer on ‘Say no to GTK+ 2’ project. Thanks to GSoC, Google and Sugar Labs for providing me such a great opportunity.&lt;/p&gt;
+
+&lt;p&gt;The proposal for the project can be found &lt;a href=&quot;/gsoc_proposal.pdf&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Sugar Labs® is a volunteer-driven member project of Software Freedom Conservancy, a nonprofit corporation. Originally part of the One Laptop Per Child project, Sugar Labs coordinates volunteers around the world who are passionate about providing educational opportunities to children through the Sugar Learning Platform.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;project&quot;&gt;Project:&lt;/h2&gt;
+
+&lt;h3 id=&quot;just-say-no-to-gtk-2&quot;&gt;Just say no to GTK+ 2&lt;/h3&gt;
+
+&lt;p&gt;As the world changes, Sugar cannot stand still. If the platforms we depend upon drop support for the version tools we are using, then we have to update our work so that it remains compatible.&lt;/p&gt;
+
+&lt;p&gt;With the end of GTK+ 2 and GStreamer 0.10, we need to upgrade the activities with these dependencies. The purpose of this project is to port dependencies of 25 Sugar activities to “GTK+ 3 and GStreamer 1.0”. The task is accompanied by updating to the latest version of sugargame and Sugar Toolkit. This project ensures better performance and long-term support for these sugar activities.
+My Mentors:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Carlos Mauro Cardenas&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Ignacio Rodriguez&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Chihurumnaya Ibiam&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;work-done&quot;&gt;Work Done:&lt;/h2&gt;
+
+&lt;p&gt;I was one of the early birds who started contributing in December. I had made a total of 71 commits before the submission of proposal. Here is the list of all my commits. Most of my work was based on ‘porting to GTK+ 3’ (which is also my GSoC project) and fixing bugs on Sugar Activities.
+Task for Next Week:&lt;/p&gt;
+
+&lt;p&gt;I will be writing a detailed workflow for porting sugar activities from GTK+2 to GTK+ 3. It will follow some trivial steps that I will follow during porting of each activity.&lt;/p&gt;
+
+&lt;p&gt;Looking forward to an amazing summer. cheers!&lt;/p&gt;</content><author><name>Yash Agrawal</name></author><category term="Gsoc" /><summary type="html">Wohoo! I have been selected in Google Summer of Code 2018.</summary></entry></feed>
