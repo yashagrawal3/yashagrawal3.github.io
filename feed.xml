@@ -1,4 +1,87 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://yashagrawal3.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://yashagrawal3.github.io/" rel="alternate" type="text/html" /><updated>2018-06-03T12:20:51+05:30</updated><id>https://yashagrawal3.github.io/</id><title type="html">Yash Agrawal</title><subtitle>Developer. Data Science. Open Source Enthusiast.</subtitle><entry><title type="html">GSoC Blog - Week 1</title><link href="https://yashagrawal3.github.io/gsoc-w1" rel="alternate" type="text/html" title="GSoC Blog - Week 1" /><published>2017-07-27T15:30:00+05:30</published><updated>2017-07-27T15:30:00+05:30</updated><id>https://yashagrawal3.github.io/gsoc-w1</id><content type="html" xml:base="https://yashagrawal3.github.io/gsoc-w1">&lt;p&gt;This is my second blog GSoC blog which focuses on the workflow involved to porting a activity to gtk+ 3.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://yashagrawal3.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://yashagrawal3.github.io/" rel="alternate" type="text/html" /><updated>2018-06-11T01:41:59+05:30</updated><id>https://yashagrawal3.github.io/</id><title type="html">Yash Agrawal</title><subtitle>Developer. Data Science. Open Source Enthusiast.</subtitle><entry><title type="html">GSoC Blog - Week 4</title><link href="https://yashagrawal3.github.io/gsoc-week4" rel="alternate" type="text/html" title="GSoC Blog - Week 4" /><published>2018-06-04T15:30:00+05:30</published><updated>2018-06-04T15:30:00+05:30</updated><id>https://yashagrawal3.github.io/gsoc-week4</id><content type="html" xml:base="https://yashagrawal3.github.io/gsoc-week4">&lt;p&gt;This is my fifth GSoC blog which tells work done this week.&lt;/p&gt;
+
+&lt;h2 id=&quot;work-done-this-week&quot;&gt;Work Done This Week:&lt;/h2&gt;
+
+&lt;p&gt;This week I worked on following activities:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;TamTam Activity&lt;/li&gt;
+  &lt;li&gt;Falabracman Activity&lt;/li&gt;
+  &lt;li&gt;AEIOU Activity&lt;/li&gt;
+  &lt;li&gt;Turtle Flags&lt;/li&gt;
+  &lt;li&gt;I Can Read Activity&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;tamtam-activity&quot;&gt;TamTam Activity&lt;/h3&gt;
+
+&lt;p&gt;This activity was also not in working condition. Even after spending hours on it, wasn’t able to get much ahead. After discussion with Ibiam, it was deffered to later.&lt;/p&gt;
+
+&lt;h3 id=&quot;falabracman-activity&quot;&gt;Falabracman Activity&lt;/h3&gt;
+
+&lt;p&gt;This is a game activity based on olpcgames. The activity has been ported to GTK+ 3, some work on small bugs like screen resize are still left before the pull request can be merged.&lt;/p&gt;
+
+&lt;h3 id=&quot;aeiou-activity&quot;&gt;AEIOU Activity&lt;/h3&gt;
+
+&lt;p&gt;All these have a common error that is always logged while running this activity, this was an attempt to fix it which might help with I Can Read work. All code was refactored and error was fixed with the help of James Cameron.&lt;/p&gt;
+
+&lt;h3 id=&quot;turte-flags&quot;&gt;Turte Flags&lt;/h3&gt;
+
+&lt;p&gt;After some initial code review, It was observed that this was also fork of Turtle Art and similar process that was followed in Turtle Confusion was to be done here. Since the pull request in Turtle Confusion was still getting comments and review, so I decided to wait until that PR is merged, to avoid doing same work twice.&lt;/p&gt;
+
+&lt;h3 id=&quot;i-can-read-activity&quot;&gt;I Can Read Activity&lt;/h3&gt;
+
+&lt;p&gt;After being stuck on a bug for days, I was finally able to find a way to hack my way through it. The Activity looks in much better condition now, though many bugs still need to be fixed.&lt;/p&gt;</content><author><name>Yash Agrawal</name></author><category term="Gsoc" /><summary type="html">This is my fifth GSoC blog which tells work done this week.</summary></entry><entry><title type="html">GSoC Blog - Week 3</title><link href="https://yashagrawal3.github.io/gsoc-week3" rel="alternate" type="text/html" title="GSoC Blog - Week 3" /><published>2018-05-28T15:30:00+05:30</published><updated>2018-05-28T15:30:00+05:30</updated><id>https://yashagrawal3.github.io/gsoc-week3</id><content type="html" xml:base="https://yashagrawal3.github.io/gsoc-week3">&lt;p&gt;This is my fourth GSoC blog which tells work done this week.&lt;/p&gt;
+
+&lt;h2 id=&quot;work-done-this-week&quot;&gt;Work Done This Week:&lt;/h2&gt;
+
+&lt;p&gt;This week I worked on following activities:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Pyeyes Activity&lt;/li&gt;
+  &lt;li&gt;Ajedrez Activity&lt;/li&gt;
+  &lt;li&gt;Moon Activity&lt;/li&gt;
+  &lt;li&gt;Turtle Confusion&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;pyeyes-activity&quot;&gt;Pyeyes Activity&lt;/h3&gt;
+
+&lt;p&gt;All the remaining work in this acitivity was done and port to GTK+ 3 was completed.&lt;/p&gt;
+
+&lt;h3 id=&quot;ajedrez-activity&quot;&gt;Ajedrez Activity&lt;/h3&gt;
+
+&lt;p&gt;All Files of this activity was ported to GTK+ 3 in this week. Since this activity had some bugs initially in the previous version, these bugs were still present after the port. Later after discussion between James and Tony, James metioned that I should deffer work on this activity.&lt;/p&gt;
+
+&lt;h3 id=&quot;moon-activity&quot;&gt;Moon Activity&lt;/h3&gt;
+
+&lt;p&gt;Most of the work on this activity was done by Ibiam already, some part of this activity is not functional. Even after hours of debugging, few bugs were still left. After discussion with Ibiam, we decided to deffer this activity to later until Ibiam is done with his tests.&lt;/p&gt;
+
+&lt;h3 id=&quot;turtle-confusion&quot;&gt;Turtle Confusion&lt;/h3&gt;
+
+&lt;p&gt;This is a big activity file based on Turtle Art. It was made to make starting with Turtle Art easier for students. Initially I started working with porting a lot of files to GTK+ 3, but later after suggestion from James, I decided to use &lt;code class=&quot;highlighter-rouge&quot;&gt;git format-patch&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;git am&lt;/code&gt; to bring all changes between the activities and resolve conflicts, which itself prooved to be a time taking task.&lt;/p&gt;</content><author><name>Yash Agrawal</name></author><category term="Gsoc" /><summary type="html">This is my fourth GSoC blog which tells work done this week.</summary></entry><entry><title type="html">GSoC Blog - Week 2</title><link href="https://yashagrawal3.github.io/gsoc-week2" rel="alternate" type="text/html" title="GSoC Blog - Week 2" /><published>2018-05-21T15:30:00+05:30</published><updated>2018-05-21T15:30:00+05:30</updated><id>https://yashagrawal3.github.io/gsoc-week2</id><content type="html" xml:base="https://yashagrawal3.github.io/gsoc-week2">&lt;p&gt;This is my third GSoC blog which tells work done this week.&lt;/p&gt;
+
+&lt;h2 id=&quot;work-done-this-week&quot;&gt;Work Done This Week:&lt;/h2&gt;
+
+&lt;p&gt;This week I worked on following activities:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;I Can Read Activity&lt;/li&gt;
+  &lt;li&gt;Record Activity&lt;/li&gt;
+  &lt;li&gt;I Know ABCs&lt;/li&gt;
+  &lt;li&gt;Pyeyes Activity&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;i-can-read-activity&quot;&gt;I Can Read Activity&lt;/h3&gt;
+
+&lt;p&gt;This activity was in very bad shape, GTK+ 2 version of this activity was also not in working condition. It had many files that needed work. This activity is similar to AEIOU, Lettermatch and I Know ABCs which helped me during porting it. A lot of work will also be done in following week on this activity to bring to working condition where all major issues are resolved. The activity still not functions as it is intended to and work is going on it.&lt;/p&gt;
+
+&lt;h3 id=&quot;record-activity&quot;&gt;Record Activity&lt;/h3&gt;
+
+&lt;p&gt;James has been working on it for a long time and most of the work on it was already done by him. This is a complicated activity which involved audio and video recording. To run this activity, I had to move from virtual box sugar live build, to Sugar build on ubuntu 17.10 installed on my laptop, this process made camera and microphone to be usable by the activity. On conversation with James, he asked me on continouos shot feature of it. I got confused later by his statement after reviewing to code and made a little change. Until further discussion, where he already fixed all issues and ported activity to GTK+ 3.&lt;/p&gt;
+
+&lt;h3 id=&quot;i-know-abcs&quot;&gt;I Know ABCs&lt;/h3&gt;
+
+&lt;p&gt;As mentioned earlier, this activity was similar to I Can Read Activity and others. It was relatively easier task to port this activity to GTK+ 3.&lt;/p&gt;
+
+&lt;h3 id=&quot;pyeyes-activity&quot;&gt;Pyeyes Activity&lt;/h3&gt;
+
+&lt;p&gt;This is a small activity with simple functions, Most of work in the GTK+ 3 port of this activity was also done in this week.&lt;/p&gt;</content><author><name>Yash Agrawal</name></author><category term="Gsoc" /><summary type="html">This is my third GSoC blog which tells work done this week.</summary></entry><entry><title type="html">GSoC Blog - Week 1</title><link href="https://yashagrawal3.github.io/gsoc-week1" rel="alternate" type="text/html" title="GSoC Blog - Week 1" /><published>2018-05-14T15:30:00+05:30</published><updated>2018-05-14T15:30:00+05:30</updated><id>https://yashagrawal3.github.io/gsoc-week1</id><content type="html" xml:base="https://yashagrawal3.github.io/gsoc-week1">&lt;p&gt;This is my second GSoC blog which focuses on the workflow involved to porting a activity to gtk+ 3.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;As the world changes, Sugar cannot stand still. If the platforms we depend upon drop support for the version tools we are using, then we have to either take over maintenance of these tools ourselves as proposed, update our work so that it remains compatible. The migration to GTK-3 is critical.&lt;/p&gt;
@@ -43,7 +126,7 @@
 Should be changed to :
 &lt;code class=&quot;highlighter-rouge&quot;&gt;+ box.pack_start(widget, expand=True, fill=False, padding=4)&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;A great guide for porting to gtk+ 3 can be found in sugar-docs.&lt;/p&gt;</content><author><name>Yash Agrawal</name></author><category term="Gsoc" /><summary type="html">This is my second blog GSoC blog which focuses on the workflow involved to porting a activity to gtk+ 3.</summary></entry><entry><title type="html">GSoC’ 18 with Sugar Labs</title><link href="https://yashagrawal3.github.io/gsoc-welcome" rel="alternate" type="text/html" title="GSoC’ 18 with Sugar Labs" /><published>2017-07-27T15:30:00+05:30</published><updated>2017-07-27T15:30:00+05:30</updated><id>https://yashagrawal3.github.io/gsoc-welcome</id><content type="html" xml:base="https://yashagrawal3.github.io/gsoc-welcome">&lt;p&gt;Wohoo! I have been selected in Google Summer of Code 2018.&lt;/p&gt;
+&lt;p&gt;A great guide for porting to gtk+ 3 can be found in sugar-docs.&lt;/p&gt;</content><author><name>Yash Agrawal</name></author><category term="Gsoc" /><summary type="html">This is my second GSoC blog which focuses on the workflow involved to porting a activity to gtk+ 3.</summary></entry><entry><title type="html">GSoC’ 18 with Sugar Labs</title><link href="https://yashagrawal3.github.io/gsoc-welcome" rel="alternate" type="text/html" title="GSoC’ 18 with Sugar Labs" /><published>2018-05-08T15:30:00+05:30</published><updated>2018-05-08T15:30:00+05:30</updated><id>https://yashagrawal3.github.io/gsoc-welcome</id><content type="html" xml:base="https://yashagrawal3.github.io/gsoc-welcome">&lt;p&gt;Wohoo! I have been selected in Google Summer of Code 2018.&lt;/p&gt;
 
 &lt;p&gt;I am very excited to work with Sugar Labs this summer on ‘Say no to GTK+ 2’ project. Thanks to GSoC, Google and Sugar Labs for providing me such a great opportunity.&lt;/p&gt;
 
