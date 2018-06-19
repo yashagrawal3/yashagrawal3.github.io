@@ -1,4 +1,61 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://yashagrawal3.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://yashagrawal3.github.io/" rel="alternate" type="text/html" /><updated>2018-06-11T02:22:50+05:30</updated><id>https://yashagrawal3.github.io/</id><title type="html">Yash Agrawal</title><subtitle>Developer. Data Science. Open Source Enthusiast.</subtitle><entry><title type="html">GSoC Blog - Week 4</title><link href="https://yashagrawal3.github.io/gsoc-week4" rel="alternate" type="text/html" title="GSoC Blog - Week 4" /><published>2018-06-04T15:30:00+05:30</published><updated>2018-06-04T15:30:00+05:30</updated><id>https://yashagrawal3.github.io/gsoc-week4</id><content type="html" xml:base="https://yashagrawal3.github.io/gsoc-week4">&lt;p&gt;This is my fifth GSoC blog which tells work done this week.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://yashagrawal3.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://yashagrawal3.github.io/" rel="alternate" type="text/html" /><updated>2018-06-19T16:36:44+05:30</updated><id>https://yashagrawal3.github.io/</id><title type="html">Yash Agrawal</title><subtitle>Developer. Data Science. Open Source Enthusiast.</subtitle><entry><title type="html">GSoC Blog - Week 6</title><link href="https://yashagrawal3.github.io/gsoc-week6" rel="alternate" type="text/html" title="GSoC Blog - Week 6" /><published>2018-06-18T15:30:00+05:30</published><updated>2018-06-18T15:30:00+05:30</updated><id>https://yashagrawal3.github.io/gsoc-week6</id><content type="html" xml:base="https://yashagrawal3.github.io/gsoc-week6">&lt;p&gt;This is my seventh GSoC blog which tells work done this week.&lt;/p&gt;
+
+&lt;h2 id=&quot;work-done-this-week&quot;&gt;Work Done This Week:&lt;/h2&gt;
+
+&lt;p&gt;This week I worked on following activities:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Star Chart Activity&lt;/li&gt;
+  &lt;li&gt;Turtle Confusion Activity&lt;/li&gt;
+  &lt;li&gt;Star Constellation Activity&lt;/li&gt;
+  &lt;li&gt;Turtle Flags Activity&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;star-chart-activity&quot;&gt;Star Chart Activity&lt;/h3&gt;
+
+&lt;p&gt;Most of the work on this activity has been done by this week. A lot of &lt;code class=&quot;highlighter-rouge&quot;&gt;draw_arc&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;draw_rectangle&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;draw_line&lt;/code&gt; were used in this acitivty, all of them were ported to Cairo.&lt;/p&gt;
+
+&lt;h3 id=&quot;turtle-confusion-acitivity&quot;&gt;Turtle Confusion Acitivity&lt;/h3&gt;
+
+&lt;p&gt;Finally all required changes were made and the pull request(with over 250 commits, not all by me though :P) was merged. The next task involving this activity would be to add its functionality to the Turltle Art Activity.&lt;/p&gt;
+
+&lt;h3 id=&quot;star-constellation-activity&quot;&gt;Star Constellation Activity&lt;/h3&gt;
+
+&lt;p&gt;It has similar codebase to Star Chart, while working I found that it also required some fixing, so added a commit fix it.&lt;/p&gt;
+
+&lt;h3 id=&quot;turtle-flags-activity&quot;&gt;Turtle Flags Activity&lt;/h3&gt;
+
+&lt;p&gt;In accordance with previous conversation with Ibiam, where we decided to work on this activity once the Turtle Confusion’s pull request gets merged, I started my work on it following every comment I got on Turtle Confusion, so that reviewing process becomes easier.&lt;/p&gt;</content><author><name>Yash Agrawal</name></author><category term="Gsoc" /><summary type="html">This is my seventh GSoC blog which tells work done this week.</summary></entry><entry><title type="html">GSoC Blog - Week 5</title><link href="https://yashagrawal3.github.io/gsoc-week5" rel="alternate" type="text/html" title="GSoC Blog - Week 5" /><published>2018-06-11T15:30:00+05:30</published><updated>2018-06-11T15:30:00+05:30</updated><id>https://yashagrawal3.github.io/gsoc-week5</id><content type="html" xml:base="https://yashagrawal3.github.io/gsoc-week5">&lt;p&gt;This is my sixth GSoC blog which tells work done this week.&lt;/p&gt;
+
+&lt;h2 id=&quot;work-done-this-week&quot;&gt;Work Done This Week:&lt;/h2&gt;
+
+&lt;p&gt;This week I worked on following activities:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Jigsaw Puzzle Activity&lt;/li&gt;
+  &lt;li&gt;Star Chart Activity&lt;/li&gt;
+  &lt;li&gt;AEIOU Activity&lt;/li&gt;
+  &lt;li&gt;Turtle Confusion Activity&lt;/li&gt;
+  &lt;li&gt;I Can Read Activity&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;jigsaw-puzzle-activity&quot;&gt;Jigsaw Puzzle Activity&lt;/h3&gt;
+
+&lt;p&gt;This is a jigsaw puzzle game activity on which some work was done by Zeeshan Khan who was doing this project last year. His work was half way through and took me couple of days to fix most of the errors that were logged. Latter I came across a issue, which after a hours of searching for a fix, prooved to be a bug in Cairo drawing itself. After discussion with &lt;a href=&quot;https://wiki.gnome.org/BenjaminBerg&quot;&gt;Benjamin Berg&lt;/a&gt; from Gnome, who has been also been a contributor to Sugar Labs, found that only way to fix the problem is to refactor the code and avoid using &lt;code class=&quot;highlighter-rouge&quot;&gt;window&lt;/code&gt; for each Jigsaw puzzle and use instead use &lt;code class=&quot;highlighter-rouge&quot;&gt;Gtk.Drawing&lt;/code&gt; in place of it. This will lead to losing the functionality of mouse click used to drag and drop the jigsaw puzzle. After discussion with mentors, it was decided to defer this activity.&lt;/p&gt;
+
+&lt;h3 id=&quot;star-chart-activity&quot;&gt;Star Chart Activity&lt;/h3&gt;
+
+&lt;p&gt;Started my work on this activity and pushed some commits on Gtk3 branch on my fork.&lt;/p&gt;
+
+&lt;h3 id=&quot;aeiou-acitivity&quot;&gt;AEIOU Acitivity&lt;/h3&gt;
+
+&lt;p&gt;All work on this activity was completed and the pull request was merged in the master branch&lt;/p&gt;
+
+&lt;h3 id=&quot;turtle-confusion-activity&quot;&gt;Turtle Confusion Activity&lt;/h3&gt;
+
+&lt;p&gt;Work on this Activity still continues. I am making all changes requested by James Cameron to make this commit mergeable.&lt;/p&gt;
+
+&lt;h3 id=&quot;i-can-read-activity&quot;&gt;I Can Read Activity&lt;/h3&gt;
+
+&lt;p&gt;Spend another day on it, did get some success while fixing. Pull request is now closer to be merged.&lt;/p&gt;</content><author><name>Yash Agrawal</name></author><category term="Gsoc" /><summary type="html">This is my sixth GSoC blog which tells work done this week.</summary></entry><entry><title type="html">GSoC Blog - Week 4</title><link href="https://yashagrawal3.github.io/gsoc-week4" rel="alternate" type="text/html" title="GSoC Blog - Week 4" /><published>2018-06-04T15:30:00+05:30</published><updated>2018-06-04T15:30:00+05:30</updated><id>https://yashagrawal3.github.io/gsoc-week4</id><content type="html" xml:base="https://yashagrawal3.github.io/gsoc-week4">&lt;p&gt;This is my fifth GSoC blog which tells work done this week.&lt;/p&gt;
 
 &lt;h2 id=&quot;work-done-this-week&quot;&gt;Work Done This Week:&lt;/h2&gt;
 
