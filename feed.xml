@@ -1,4 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://yashagrawal3.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://yashagrawal3.github.io/" rel="alternate" type="text/html" /><updated>2018-06-19T16:36:44+05:30</updated><id>https://yashagrawal3.github.io/</id><title type="html">Yash Agrawal</title><subtitle>Developer. Data Science. Open Source Enthusiast.</subtitle><entry><title type="html">GSoC Blog - Week 6</title><link href="https://yashagrawal3.github.io/gsoc-week6" rel="alternate" type="text/html" title="GSoC Blog - Week 6" /><published>2018-06-18T15:30:00+05:30</published><updated>2018-06-18T15:30:00+05:30</updated><id>https://yashagrawal3.github.io/gsoc-week6</id><content type="html" xml:base="https://yashagrawal3.github.io/gsoc-week6">&lt;p&gt;This is my seventh GSoC blog which tells work done this week.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://yashagrawal3.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://yashagrawal3.github.io/" rel="alternate" type="text/html" /><updated>2018-07-02T22:46:30+05:30</updated><id>https://yashagrawal3.github.io/</id><title type="html">Yash Agrawal</title><subtitle>Developer. Data Science. Open Source Enthusiast.</subtitle><entry><title type="html">GSoC Blog - Week 7</title><link href="https://yashagrawal3.github.io/gsoc-week7" rel="alternate" type="text/html" title="GSoC Blog - Week 7" /><published>2018-06-25T15:30:00+05:30</published><updated>2018-06-25T15:30:00+05:30</updated><id>https://yashagrawal3.github.io/gsoc-week7</id><content type="html" xml:base="https://yashagrawal3.github.io/gsoc-week7">&lt;p&gt;This is my eighth GSoC blog which tells work done this week.&lt;/p&gt;
+
+&lt;h2 id=&quot;work-done-this-week&quot;&gt;Work Done This Week:&lt;/h2&gt;
+
+&lt;p&gt;This Week I took a look on almost all the repositories that are in Gtk+ 2 and need a port to Gtk+ 3 and opened 16 new issues in various repositories. I also updated a repository where I keep a track of all Gtk+ 2, view updated list &lt;a href=&quot;https://github.com/yashagrawal3/sugarlabs-porting-list&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This week I worked on following activities:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Agubrowser Activity&lt;/li&gt;
+  &lt;li&gt;Dasher Activity&lt;/li&gt;
+  &lt;li&gt;Block Party Activity&lt;/li&gt;
+  &lt;li&gt;Star Chart Activity&lt;/li&gt;
+  &lt;li&gt;SocialCalc Activity&lt;/li&gt;
+  &lt;li&gt;Flip Sticks Activity&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;agubrowser-activity&quot;&gt;Agubrowser Activity&lt;/h3&gt;
+
+&lt;p&gt;Minor Fixes to complete the port of this activity to Gtk+ 3.&lt;/p&gt;
+
+&lt;h3 id=&quot;dasher-activity&quot;&gt;Dasher Activity&lt;/h3&gt;
+
+&lt;p&gt;Minor improvements.&lt;/p&gt;
+
+&lt;h3 id=&quot;block-party-activity&quot;&gt;Block Party Activity&lt;/h3&gt;
+
+&lt;p&gt;Ported activity to Gtk+ 3, found a great tool while working on it, &lt;a href=&quot;https://wiki.gnome.org/Projects/GTK%2B/Inspector&quot;&gt;GtkIndpector&lt;/a&gt;, I suggest every GTK/Glib/Gnome enthusiast to check it out. It is meant to work like Chrome Developer tools and does it’s job very well. Faced a couple of issue and learned a lot while working on this acitivity. Adding a toolbar to this activiy was a bit of trouble becuase GtkDrawable was loosing it’s Key press event property. Quickfix for this issue issue is to change can_focus flag to True (verified using GtkInspector), but since it was originally designed to to keep away from the Sugar design, Quozl, Ibiam and I decided to keep it the way it is for now.&lt;/p&gt;
+
+&lt;h3 id=&quot;star-chart-activity&quot;&gt;Star Chart Activity&lt;/h3&gt;
+
+&lt;p&gt;Repeated Iterations are being made to this activity to take this to a point where it is ready for next release.&lt;/p&gt;
+
+&lt;h3 id=&quot;socialcalc-activity&quot;&gt;SocialCalc Activity&lt;/h3&gt;
+
+&lt;p&gt;Fixes to complete the port of this activity to Gtk+ 3.&lt;/p&gt;
+
+&lt;h3 id=&quot;flip-sticks-activity&quot;&gt;Flip Sticks Activity&lt;/h3&gt;
+
+&lt;p&gt;This activity was a challenging activity to work on. All it’s code was written in Drawable, so first major work to port it Cairo, being a big activity this task was big in itself. Following this was porting to Gtk+ 3. Port to Gtk+ 3 was successful but Cairo part of this code is still buggy, Quozl has guided me to complete its work.&lt;/p&gt;</content><author><name>Yash Agrawal</name></author><category term="Gsoc" /><summary type="html">This is my eighth GSoC blog which tells work done this week.</summary></entry><entry><title type="html">GSoC Blog - Week 6</title><link href="https://yashagrawal3.github.io/gsoc-week6" rel="alternate" type="text/html" title="GSoC Blog - Week 6" /><published>2018-06-18T15:30:00+05:30</published><updated>2018-06-18T15:30:00+05:30</updated><id>https://yashagrawal3.github.io/gsoc-week6</id><content type="html" xml:base="https://yashagrawal3.github.io/gsoc-week6">&lt;p&gt;This is my seventh GSoC blog which tells work done this week.&lt;/p&gt;
 
 &lt;h2 id=&quot;work-done-this-week&quot;&gt;Work Done This Week:&lt;/h2&gt;
 
