@@ -1,4 +1,80 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://yashagrawal3.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://yashagrawal3.github.io/" rel="alternate" type="text/html" /><updated>2018-07-02T22:46:30+05:30</updated><id>https://yashagrawal3.github.io/</id><title type="html">Yash Agrawal</title><subtitle>Developer. Data Science. Open Source Enthusiast.</subtitle><entry><title type="html">GSoC Blog - Week 7</title><link href="https://yashagrawal3.github.io/gsoc-week7" rel="alternate" type="text/html" title="GSoC Blog - Week 7" /><published>2018-06-25T15:30:00+05:30</published><updated>2018-06-25T15:30:00+05:30</updated><id>https://yashagrawal3.github.io/gsoc-week7</id><content type="html" xml:base="https://yashagrawal3.github.io/gsoc-week7">&lt;p&gt;This is my eighth GSoC blog which tells work done this week.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://yashagrawal3.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://yashagrawal3.github.io/" rel="alternate" type="text/html" /><updated>2018-07-09T15:07:29+05:30</updated><id>https://yashagrawal3.github.io/</id><title type="html">Yash Agrawal</title><subtitle>Developer. Data Science. Open Source Enthusiast.</subtitle><entry><title type="html">GSoC Blog - Week 9</title><link href="https://yashagrawal3.github.io/gsoc-week9" rel="alternate" type="text/html" title="GSoC Blog - Week 9" /><published>2018-07-09T06:30:00+05:30</published><updated>2018-07-09T06:30:00+05:30</updated><id>https://yashagrawal3.github.io/gsoc-week9</id><content type="html" xml:base="https://yashagrawal3.github.io/gsoc-week9">&lt;p&gt;This is my tenth GSoC blog which tells work done this week.&lt;/p&gt;
+
+&lt;h2 id=&quot;work-done-this-week&quot;&gt;Work Done This Week:&lt;/h2&gt;
+
+&lt;p&gt;This week I worked on following activities:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Calendaria Activity&lt;/li&gt;
+  &lt;li&gt;Ayni Activity&lt;/li&gt;
+  &lt;li&gt;Read SD Comics Activity&lt;/li&gt;
+  &lt;li&gt;Feliz Navidad Activity&lt;/li&gt;
+  &lt;li&gt;Food Force 2 Activity&lt;/li&gt;
+  &lt;li&gt;GeoTonky Activity&lt;/li&gt;
+  &lt;li&gt;Blocku-1s&lt;/li&gt;
+  &lt;li&gt;Cuidarme Activity&lt;/li&gt;
+  &lt;li&gt;Flipsticks Activity&lt;/li&gt;
+  &lt;li&gt;Calgadito Activity&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;completed-port-of-these-activities-adnd-fixed-fostile-fork-issues&quot;&gt;Completed port of these activities adnd fixed fostile fork issues:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Ayni Activity&lt;/li&gt;
+  &lt;li&gt;Read SD Comics Activity&lt;/li&gt;
+  &lt;li&gt;Feliz Navidad Activity&lt;/li&gt;
+  &lt;li&gt;Food Force 2 Activity&lt;/li&gt;
+  &lt;li&gt;GeoTonky Activity&lt;/li&gt;
+  &lt;li&gt;Blocku-1&lt;/li&gt;
+  &lt;li&gt;Cuidarme Activity&lt;/li&gt;
+  &lt;li&gt;Flipsticks Activity&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;started-working-on-these-activities&quot;&gt;Started Working on these Activities:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Calgadito Activity&lt;/li&gt;
+  &lt;li&gt;Calendaria Activity&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Yash Agrawal</name></author><category term="Gsoc" /><summary type="html">This is my tenth GSoC blog which tells work done this week.</summary></entry><entry><title type="html">GSoC Blog - Week 8</title><link href="https://yashagrawal3.github.io/gsoc-week8" rel="alternate" type="text/html" title="GSoC Blog - Week 8" /><published>2018-07-02T15:30:00+05:30</published><updated>2018-07-02T15:30:00+05:30</updated><id>https://yashagrawal3.github.io/gsoc-week8</id><content type="html" xml:base="https://yashagrawal3.github.io/gsoc-week8">&lt;p&gt;This is my ninth GSoC blog which tells work done this week.&lt;/p&gt;
+
+&lt;h2 id=&quot;work-done-this-week&quot;&gt;Work Done This Week:&lt;/h2&gt;
+
+&lt;p&gt;This week I worked on following activities:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Erikos Activity&lt;/li&gt;
+  &lt;li&gt;Adivinanzas Activity&lt;/li&gt;
+  &lt;li&gt;Spanish Gurani Activity&lt;/li&gt;
+  &lt;li&gt;SocialCalc&lt;/li&gt;
+  &lt;li&gt;Block Party Acitivty&lt;/li&gt;
+  &lt;li&gt;Geotonky Activity&lt;/li&gt;
+  &lt;li&gt;Followme Butia&lt;/li&gt;
+  &lt;li&gt;Blocku Activity&lt;/li&gt;
+  &lt;li&gt;Panorama Activity&lt;/li&gt;
+  &lt;li&gt;Turtle Flag Activity&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;ported-this-activities-and-completed-its-work&quot;&gt;Ported this activities and completed it’s work:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Erikos Activity&lt;/li&gt;
+  &lt;li&gt;Adivinanzas Activity&lt;/li&gt;
+  &lt;li&gt;Spanish Gurani Activity&lt;/li&gt;
+  &lt;li&gt;SocialCalc&lt;/li&gt;
+  &lt;li&gt;Block Party Acitivty&lt;/li&gt;
+  &lt;li&gt;Panorama Activity&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;geotonky-activity&quot;&gt;Geotonky Activity&lt;/h3&gt;
+
+&lt;p&gt;Port of this activity was done but it repository in Sugarlabs was a hostile fork, working on it resolve the issue.&lt;/p&gt;
+
+&lt;h3 id=&quot;followme-butia&quot;&gt;Followme Butia&lt;/h3&gt;
+
+&lt;p&gt;Activity is ported but do not have hardware for testing this activity, so it on a hold.&lt;/p&gt;
+
+&lt;h3 id=&quot;blocku-activity&quot;&gt;Blocku Activity&lt;/h3&gt;
+
+&lt;p&gt;Port of this activity was done but it repository in Sugarlabs was a hostile fork, working on it resolve the issue.&lt;/p&gt;
+
+&lt;h3 id=&quot;turtle-flag-activity&quot;&gt;Turtle Flag Activity&lt;/h3&gt;
+
+&lt;p&gt;Continued my work to complete the port of Turtle Flag Activity&lt;/p&gt;</content><author><name>Yash Agrawal</name></author><category term="Gsoc" /><summary type="html">This is my ninth GSoC blog which tells work done this week.</summary></entry><entry><title type="html">GSoC Blog - Week 7</title><link href="https://yashagrawal3.github.io/gsoc-week7" rel="alternate" type="text/html" title="GSoC Blog - Week 7" /><published>2018-06-25T15:30:00+05:30</published><updated>2018-06-25T15:30:00+05:30</updated><id>https://yashagrawal3.github.io/gsoc-week7</id><content type="html" xml:base="https://yashagrawal3.github.io/gsoc-week7">&lt;p&gt;This is my eighth GSoC blog which tells work done this week.&lt;/p&gt;
 
 &lt;h2 id=&quot;work-done-this-week&quot;&gt;Work Done This Week:&lt;/h2&gt;
 
