@@ -1,4 +1,77 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://yashagrawal3.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://yashagrawal3.github.io/" rel="alternate" type="text/html" /><updated>2018-07-09T15:07:29+05:30</updated><id>https://yashagrawal3.github.io/</id><title type="html">Yash Agrawal</title><subtitle>Developer. Data Science. Open Source Enthusiast.</subtitle><entry><title type="html">GSoC Blog - Week 9</title><link href="https://yashagrawal3.github.io/gsoc-week9" rel="alternate" type="text/html" title="GSoC Blog - Week 9" /><published>2018-07-09T06:30:00+05:30</published><updated>2018-07-09T06:30:00+05:30</updated><id>https://yashagrawal3.github.io/gsoc-week9</id><content type="html" xml:base="https://yashagrawal3.github.io/gsoc-week9">&lt;p&gt;This is my tenth GSoC blog which tells work done this week.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://yashagrawal3.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://yashagrawal3.github.io/" rel="alternate" type="text/html" /><updated>2019-06-05T11:47:04+05:30</updated><id>https://yashagrawal3.github.io/</id><title type="html">Yash Agrawal</title><subtitle>Developer. Data Science. Open Source Enthusiast.</subtitle><entry><title type="html">GSoC Final Report</title><link href="https://yashagrawal3.github.io/gsoc-welcome" rel="alternate" type="text/html" title="GSoC Final Report" /><published>2018-08-13T15:30:00+05:30</published><updated>2018-08-13T15:30:00+05:30</updated><id>https://yashagrawal3.github.io/gsoc-welcome</id><content type="html" xml:base="https://yashagrawal3.github.io/gsoc-welcome">&lt;p&gt;This blog includes my work summary and my experience during Google Summer of Code’18 with Sugar Labs.&lt;/p&gt;
+
+&lt;p&gt;I am in the final phase of completing my project “Say no to Gtk2”, which includes The Porting of a few popular activities of sugarlabs from Gtk2 and GST0.10 to Gtk3 and GST1.0. It also included porting all activities to current standards followed by Sugar Labs to keep proper maintenance track of the activity. All students will now be able to use these activities again.&lt;/p&gt;
+
+&lt;h2 id=&quot;activities&quot;&gt;Activities&lt;/h2&gt;
+&lt;p&gt;Here is the list of activities I worked on during GSoC period:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/sugarlabs/iknowmyabcs&quot;&gt;I Know My ABCs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/sugarlabs/activity-turtle-confusion&quot;&gt;Turtle Confusion&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/sugarlabs/pyeyes-activity&quot;&gt;Pyeyes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/sugarlabs/block-party-activity&quot;&gt;Block Party&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/sugarlabs/adivinanzas-activity&quot;&gt;Adivinanz&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/sugarlabs/activity-erikos&quot;&gt;Erikos&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/sugarlabs/SocialCalc&quot;&gt;SocialCalc&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/sugarlabs/panorama&quot;&gt;Panorama&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/sugarlabs/feliz-navidad-activity&quot;&gt;Feliz Navidad&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/sugarlabs/blocku-1&quot;&gt;Blocku&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/sugarlabs/ayni-activity&quot;&gt;Ayni&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/sugarlabs/falabracman-activity&quot;&gt;Falabracman&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/sugarlabs/GeoTonky&quot;&gt;Geotonky&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/sugarlabs/read-sd-comics&quot;&gt;Read sd comics&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/sugarlabs/cuidarme-activity&quot;&gt;Cuidarme&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/sugarlabs/i-can-read-activity&quot;&gt;I Can Read&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/sugarlabs/starchart&quot;&gt;Star Chart&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/sugarlabs/flipsticks&quot;&gt;Flip Sticks&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/sugarlabs/foodforce2-activity&quot;&gt;Food Force&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/sugarlabs/arithmetic&quot;&gt;Arithmetic&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/sugarlabs/ajedrez-activity&quot;&gt;Ajedrez&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/sugarlabs/followmeButia&quot;&gt;Follow Me Butia&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;pull-request&quot;&gt;Pull Request&lt;/h2&gt;
+&lt;p&gt;Here is the list of pull requests I opened during GSoC period:&lt;/p&gt;
+
+&lt;h3 id=&quot;merged&quot;&gt;Merged&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;https://github.com/sugarlabs/falabracman-activity/pull/2&lt;/li&gt;
+  &lt;li&gt;https://github.com/sugarlabs/activity-turtle-confusion/pull/4&lt;/li&gt;
+  &lt;li&gt;https://github.com/sugarlabs/read-sd-comics/pull/6&lt;/li&gt;
+  &lt;li&gt;https://github.com/sugarlabs/cuidarme-activity/pull/2&lt;/li&gt;
+  &lt;li&gt;https://github.com/sugarlabs/GeoTonky/pull/1&lt;/li&gt;
+  &lt;li&gt;https://github.com/sugarlabs/blocku-1/pull/1&lt;/li&gt;
+  &lt;li&gt;https://github.com/sugarlabs/ayni-activity/pull/2&lt;/li&gt;
+  &lt;li&gt;https://github.com/sugarlabs/feliz-navidad-activity/pull/2&lt;/li&gt;
+  &lt;li&gt;https://github.com/sugarlabs/panorama/pull/5&lt;/li&gt;
+  &lt;li&gt;https://github.com/sugarlabs/spanish-guarani/pull/2&lt;/li&gt;
+  &lt;li&gt;https://github.com/sugarlabs/activity-erikos/pull/7&lt;/li&gt;
+  &lt;li&gt;https://github.com/sugarlabs/adivinanzas-activity/pull/&lt;/li&gt;
+  &lt;li&gt;https://github.com/sugarlabs/iknowmyabcs/pull/82&lt;/li&gt;
+  &lt;li&gt;https://github.com/sugarlabs/SocialCalc/pull/3&lt;/li&gt;
+  &lt;li&gt;https://github.com/sugarlabs/block-party-activity/pull/3&lt;/li&gt;
+  &lt;li&gt;https://github.com/sugarlabs/AEIOU/pull/11&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;not-merged-yet&quot;&gt;Not merged yet:&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;https://github.com/sugarlabs/flipsticks/pull/3&lt;/li&gt;
+  &lt;li&gt;https://github.com/sugarlabs/foodforce2-activity/pull/1&lt;/li&gt;
+  &lt;li&gt;https://github.com/sugarlabs/followmeButia/pull/6&lt;/li&gt;
+  &lt;li&gt;https://github.com/sugarlabs/starchart/pull/6&lt;/li&gt;
+  &lt;li&gt;https://github.com/sugarlabs/i-can-read-activity/pull/8&lt;/li&gt;
+  &lt;li&gt;https://github.com/sugarlabs/ajedrez-activity/pull/6&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;to-do&quot;&gt;To Do&lt;/h2&gt;
+
+&lt;p&gt;There are still some minor bugs to be fixed in the pull requests that are not merged yet, I am still adding fixes to them, will hold it until it’s in perfect shape. Releasing all these activities is also something we (I and mentor) decided to be done in post GSoC period.&lt;/p&gt;
+
+&lt;h2 id=&quot;gsoc-experience&quot;&gt;GSoC Experience&lt;/h2&gt;
+&lt;p&gt;It has been a great journey till here with Sugar Labs. I started to contribute to Sugar Labs in December 2017 and started making pull requests and taking part in weekly meetings. I started with sugarlabs website which involved CSS and js work, it was pretty comfortable with and then slowly moved towards working on sugar activities. I was completely alien to Gtk+ and Desktop Client development then but started getting hang of it a few days later. I have a total of 98 commits and 70 pull requests merged till date in Sugar Labs, a majority of them being Port to Gtk+3. I gained experience and some expertise in libraries like Gtk+, GStreamer, Cairo, Pango, Drawable etc.&lt;/p&gt;
+
+&lt;h2 id=&quot;working-with-sugar-labs&quot;&gt;Working with Sugar Labs&lt;/h2&gt;
+
+&lt;p&gt;Sugar Labs is a great organization with some very talented developers, you always learn from others so much. A big shout out to Chihurumnaya Ibiam for being such a great mentor, it was a great experience working with him. James Cameron(quozl) has been a great mentor throughout, he has been kind enough take out time to explain me everything from scratch with great detail about things I had absolutely no idea about. Walter Bender has always been there for help and support. I would love to stay connected to Sugar Labs and keep on contributing to Sugar Labs&lt;/p&gt;</content><author><name>Yash Agrawal</name></author><category term="Gsoc" /><summary type="html">This blog includes my work summary and my experience during Google Summer of Code’18 with Sugar Labs.</summary></entry><entry><title type="html">GSoC Blog - Week 9</title><link href="https://yashagrawal3.github.io/gsoc-week9" rel="alternate" type="text/html" title="GSoC Blog - Week 9" /><published>2018-07-09T06:30:00+05:30</published><updated>2018-07-09T06:30:00+05:30</updated><id>https://yashagrawal3.github.io/gsoc-week9</id><content type="html" xml:base="https://yashagrawal3.github.io/gsoc-week9">&lt;p&gt;This is my tenth GSoC blog which tells work done this week.&lt;/p&gt;
 
 &lt;h2 id=&quot;work-done-this-week&quot;&gt;Work Done This Week:&lt;/h2&gt;
 
@@ -297,42 +370,4 @@
 Should be changed to :
 &lt;code class=&quot;highlighter-rouge&quot;&gt;+ box.pack_start(widget, expand=True, fill=False, padding=4)&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;A great guide for porting to gtk+ 3 can be found in sugar-docs.&lt;/p&gt;</content><author><name>Yash Agrawal</name></author><category term="Gsoc" /><summary type="html">This is my second GSoC blog which focuses on the workflow involved to porting a activity to gtk+ 3.</summary></entry><entry><title type="html">GSoC’ 18 with Sugar Labs</title><link href="https://yashagrawal3.github.io/gsoc-welcome" rel="alternate" type="text/html" title="GSoC’ 18 with Sugar Labs" /><published>2018-05-08T15:30:00+05:30</published><updated>2018-05-08T15:30:00+05:30</updated><id>https://yashagrawal3.github.io/gsoc-welcome</id><content type="html" xml:base="https://yashagrawal3.github.io/gsoc-welcome">&lt;p&gt;Wohoo! I have been selected in Google Summer of Code 2018.&lt;/p&gt;
-
-&lt;p&gt;I am very excited to work with Sugar Labs this summer on ‘Say no to GTK+ 2’ project. Thanks to GSoC, Google and Sugar Labs for providing me such a great opportunity.&lt;/p&gt;
-
-&lt;p&gt;The proposal for the project can be found &lt;a href=&quot;/gsoc_proposal.pdf&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Sugar Labs® is a volunteer-driven member project of Software Freedom Conservancy, a nonprofit corporation. Originally part of the One Laptop Per Child project, Sugar Labs coordinates volunteers around the world who are passionate about providing educational opportunities to children through the Sugar Learning Platform.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;project&quot;&gt;Project:&lt;/h2&gt;
-
-&lt;h3 id=&quot;just-say-no-to-gtk-2&quot;&gt;Just say no to GTK+ 2&lt;/h3&gt;
-
-&lt;p&gt;As the world changes, Sugar cannot stand still. If the platforms we depend upon drop support for the version tools we are using, then we have to update our work so that it remains compatible.&lt;/p&gt;
-
-&lt;p&gt;With the end of GTK+ 2 and GStreamer 0.10, we need to upgrade the activities with these dependencies. The purpose of this project is to port dependencies of 25 Sugar activities to “GTK+ 3 and GStreamer 1.0”. The task is accompanied by updating to the latest version of sugargame and Sugar Toolkit. This project ensures better performance and long-term support for these sugar activities.
-My Mentors:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Carlos Mauro Cardenas&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Ignacio Rodriguez&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Chihurumnaya Ibiam&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;work-done&quot;&gt;Work Done:&lt;/h2&gt;
-
-&lt;p&gt;I was one of the early birds who started contributing in December. I had made a total of 71 commits before the submission of proposal. Here is the list of all my commits. Most of my work was based on ‘porting to GTK+ 3’ (which is also my GSoC project) and fixing bugs on Sugar Activities.
-Task for Next Week:&lt;/p&gt;
-
-&lt;p&gt;I will be writing a detailed workflow for porting sugar activities from GTK+2 to GTK+ 3. It will follow some trivial steps that I will follow during porting of each activity.&lt;/p&gt;
-
-&lt;p&gt;Looking forward to an amazing summer. cheers!&lt;/p&gt;</content><author><name>Yash Agrawal</name></author><category term="Gsoc" /><summary type="html">Wohoo! I have been selected in Google Summer of Code 2018.</summary></entry></feed>
+&lt;p&gt;A great guide for porting to gtk+ 3 can be found in sugar-docs.&lt;/p&gt;</content><author><name>Yash Agrawal</name></author><category term="Gsoc" /><summary type="html">This is my second GSoC blog which focuses on the workflow involved to porting a activity to gtk+ 3.</summary></entry></feed>
