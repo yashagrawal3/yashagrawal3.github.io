@@ -4,7 +4,22 @@
     <title> - Articles</title>
     <description>Developer. Data Science. Open Source Enthusiast.</description>
     <link>
-    http://localhost:4000</link>
+    https://yashagrawal3.github.io</link>
+    
+      
+      <item>
+        <title>Snorkeling with Data</title>
+        
+          <description>&lt;p&gt;A system for rapidly creating training sets with weak supervision&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Tue, 04 Jun 2019 10:00:00 +0000</pubDate>
+        <link>
+        https://yashagrawal3.github.io/snorkeling-with-data</link>
+        <guid isPermaLink="true">https://yashagrawal3.github.io/snorkeling-with-data</guid>
+      </item>
+      
     
       
       <item>
@@ -16,8 +31,8 @@
         
         <pubDate>Mon, 13 Aug 2018 10:00:00 +0000</pubDate>
         <link>
-        https://yashagrawal3.github.io/gsoc-welcome</link>
-        <guid isPermaLink="true">https://yashagrawal3.github.io/gsoc-welcome</guid>
+        https://yashagrawal3.github.io/gsoc-finalreport</link>
+        <guid isPermaLink="true">https://yashagrawal3.github.io/gsoc-finalreport</guid>
       </item>
       
     
@@ -166,8 +181,8 @@
         
         <pubDate>Tue, 08 May 2018 10:00:00 +0000</pubDate>
         <link>
-        https://yashagrawal3.github.io/gsoc-finalreport</link>
-        <guid isPermaLink="true">https://yashagrawal3.github.io/gsoc-finalreport</guid>
+        https://yashagrawal3.github.io/gsoc-welcome</link>
+        <guid isPermaLink="true">https://yashagrawal3.github.io/gsoc-welcome</guid>
       </item>
       
     

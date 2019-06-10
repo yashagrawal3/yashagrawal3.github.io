@@ -1,4 +1,110 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://yashagrawal3.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://yashagrawal3.github.io/" rel="alternate" type="text/html" /><updated>2019-06-05T11:47:04+05:30</updated><id>https://yashagrawal3.github.io/</id><title type="html">Yash Agrawal</title><subtitle>Developer. Data Science. Open Source Enthusiast.</subtitle><entry><title type="html">GSoC Final Report</title><link href="https://yashagrawal3.github.io/gsoc-welcome" rel="alternate" type="text/html" title="GSoC Final Report" /><published>2018-08-13T15:30:00+05:30</published><updated>2018-08-13T15:30:00+05:30</updated><id>https://yashagrawal3.github.io/gsoc-welcome</id><content type="html" xml:base="https://yashagrawal3.github.io/gsoc-welcome">&lt;p&gt;This blog includes my work summary and my experience during Google Summer of Code’18 with Sugar Labs.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://yashagrawal3.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://yashagrawal3.github.io/" rel="alternate" type="text/html" /><updated>2019-06-11T01:05:10+05:30</updated><id>https://yashagrawal3.github.io/</id><title type="html">Yash Agrawal</title><subtitle>Developer. Data Science. Open Source Enthusiast.</subtitle><entry><title type="html">Snorkeling with Data</title><link href="https://yashagrawal3.github.io/snorkeling-with-data" rel="alternate" type="text/html" title="Snorkeling with Data" /><published>2019-06-04T15:30:00+05:30</published><updated>2019-06-04T15:30:00+05:30</updated><id>https://yashagrawal3.github.io/snorkeling-with-data</id><content type="html" xml:base="https://yashagrawal3.github.io/snorkeling-with-data">&lt;p&gt;A system for rapidly creating training sets with weak supervision&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;./assets/images/snorkelfull.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As name of the paper suggests “&lt;em&gt;Snorkel: A System for Fast Training Data Creation&lt;/em&gt;”, Snorkel is a tool used for rapid creation of training datasets without hand labeling thousands of data points. With the increas in intricacies of state-of-the-art machine learning models, the requirement of large data also becomes a necessity. In todays scenario, labeling training data is increasingly the largest bottleneck in deploying machine learning systems. Snorkel introduces a whole new paradigm of &lt;strong&gt;Data Programming&lt;/strong&gt;, instead of making users handlabel the data, it makes users write labeling function that express arbitrary heuristics, which can have unknown accuracies and correlations, to assign labels to the data. Training set prepared by Snorkel had been proven to be much more effective and has increased predictive performance 45% (on average) and speeded up the process by 2.8x (on average) against the training set obtained by hand labeling the data.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;./assets/images/mlchain.PNG&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For training standard machine learning model, we usually need a well structured data that are easy to process. But what if we want to extract our training data from a bunch of newspapers, scientific papers, Medical images? This type of data is refereed to as &lt;strong&gt;Dark Data&lt;/strong&gt;. Snorkel is capable of providing us a with well structured labelled data by process called &lt;strong&gt;Dark Data Extraction&lt;/strong&gt;. This gives us a noise aware data that is capable of training high performance predictive model.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;./assets/images/darkdata.PNG&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;principles-of-snorkels-design&quot;&gt;Principles of Snorkel’s Design&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Bring All Sources to Bear:&lt;/strong&gt; System should enable user to all sources of weak supervision available to create Labeling functions.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Training Data as the Interface to ML:&lt;/strong&gt; The system should model label sources to produce a single, probabilistic label for each data point and train any of a wide range of classifiers to generalize beyond those sources.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Supervision as Interactive Programming:&lt;/strong&gt; The system should provide rapid results in response to user supervision.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The main challenges here are unknown sources to resolve disagreements and pass on the critical lineage information to the end model being trained. Since we don’t have the ground truth here, Snorkel learns the accuracies of weak supervision sources and trains a generative model.&lt;/p&gt;
+
+&lt;h2 id=&quot;snorkel-architecture&quot;&gt;Snorkel Architecture&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;./assets/images/structure.PNG&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Workflow of snorkel proceeds in three main stages:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Writing Labeling Functions&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Modeling Accuracies and Correlations&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Training a Discriminative Model&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Here are some terminologies that will be used later:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Entity:&lt;/strong&gt; Concepts that can be separated into meaningful categories&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Relation:&lt;/strong&gt; Semantic association between two or more entities&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Candidate:&lt;/strong&gt; An object for which we want to make a prediction about&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Knowledge Base:&lt;/strong&gt; A repository of structured information&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Let’s consider a task of building &lt;em&gt;a knowledge base of married couples&lt;/em&gt; by extracting mentions of spouses from news source. We will use Data Programming approach and try to get heuristics based noisy label data.&lt;/p&gt;
+
+&lt;h3 id=&quot;1-writing-labeling-functions&quot;&gt;1. Writing Labeling Functions&lt;/h3&gt;
+
+&lt;p&gt;First task is to get entities from the given data and there are multiple ways to shortlist entities from the corpus. We can use &lt;em&gt;Spacy’s&lt;/em&gt; noun-phrase chunking or can use some existing knowledge base to get entities. We can then pair these entities to get all candidates which will be labeled in following steps, here candidates are pairs of people mentioned in sentences. Now our task is to find if these candidates are spouse of each other or not.&lt;/p&gt;
+
+&lt;p&gt;Humans can use real-world knowledge, context and common-sense heuristics to assign a label to candidate. We will use these abilities to write a number of labeling functions. Some of the approaches for Declarative labeling functions are:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Pattern Based :&lt;/strong&gt; Use heuristics and common pattern to write labeling function&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Distant Supervision:&lt;/strong&gt; Use any existing knowledge base to label candidates&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Weak Classifiers:&lt;/strong&gt; Classifiers that are insufficient for our task and provides us a noisy label.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Labeling Function Generator:&lt;/strong&gt; It’s a inbuilt Snorkel tool which generates multiple labeling functions from a single resource, such as crowd-sourced labels.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Labeling Functions will label candidates as &lt;em&gt;positive(1)&lt;/em&gt;, &lt;em&gt;negative(-1)&lt;/em&gt; or &lt;em&gt;abstain(0)&lt;/em&gt; in this case.&lt;/p&gt;
+
+&lt;p&gt;Using Pattern Based approach, we can write LFs using following heuristics:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Mention of “Husband” and “Wife” in a sentence : 1&lt;/li&gt;
+  &lt;li&gt;Mention of “Spouse” in a sentence : 1&lt;/li&gt;
+  &lt;li&gt;Surnames of both entities being same : 1&lt;/li&gt;
+  &lt;li&gt;Mention of keywords like “Boyfriend”, “Girlfriend”, “Boss” : -1&lt;/li&gt;
+  &lt;li&gt;Mention of “are married” keyword : 1&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We can also use a knowledge base of famous married people to create a labeling function, for eg. we know “&lt;em&gt;Barack Obama&lt;/em&gt;” and “&lt;em&gt;Michelle Obama&lt;/em&gt;” are married, so we can directly assign positive label to it.&lt;/p&gt;
+
+&lt;h3 id=&quot;2-modeling-accuracies-and-correlations&quot;&gt;2. Modeling Accuracies and Correlations&lt;/h3&gt;
+
+&lt;p&gt;We asses the quality of our labeling functions on following metrics:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Accuracy:&lt;/strong&gt;  The percentage of candidates  labeling function labels correctly&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Coverage:&lt;/strong&gt; The percentage of all candidates  that are labeled by more the one LF&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Conflict:&lt;/strong&gt; The percentage of candidates with more than one labels that disagree&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ideally, we want high-coverage and high-accuracy LFs but LFs with probability better than random chance will work and improve final result. Having conflicts is actually good because it allows our learn information about the LFs.&lt;/p&gt;
+
+&lt;p&gt;Next step to make a &lt;strong&gt;Generative Model&lt;/strong&gt; to unify all weak supervision we have provided. To get an intuition of this, we can assume every LF as a vote and we need to find weighted majority vote. As &lt;strong&gt;Condorcet’s Jury Theorem&lt;/strong&gt; states ‘As long as most people vote correctly, adding  more people improves the accuracy of majority vote’, so more the number of LFs, better the result. Every LF has its own latent accuracies which can be learned using overlap and conflicts with other LFs. So, if a LFs make correlated decision, without knowing if right or wrong, that LF will be assigned a higher weight. In the end, we will have a matrix will each labeling function assigned a weight. Usually, this step is iterated a few times to get improved results.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;./assets/images/pipeline.PNG&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;3-training-a-discriminative-model&quot;&gt;3. Training a Discriminative Model&lt;/h3&gt;
+
+&lt;p&gt;Last part of the pipeline is the fastest one. The output of the generative model is a set of &lt;strong&gt;probabilistic training labels&lt;/strong&gt;, we now want to use these to train our final Noise-aware discriminative model. We can use techniques like &lt;em&gt;Logistic Regression, SVMs, LSTM&lt;/em&gt; at this stage. The discriminative model learns feature representation of our LFs and this makes it better able to generalize to unseen candidates. This increases recall significantly and gives the final output.&lt;/p&gt;
+
+&lt;p&gt;There is so much more to snorkel that cannot be covered in this blog. Snorkel derivatives like &lt;em&gt;Snorkel Metal&lt;/em&gt; and &lt;em&gt;Snorkel Drybell&lt;/em&gt; have gone further to improve both speed and accuracy of the result.&lt;/p&gt;
+
+&lt;h3 id=&quot;references&quot;&gt;References:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://hazyresearch.github.io/snorkel/&quot;&gt;Snorkel Website&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/HazyResearch/snorkel&quot;&gt;GitHub Repository&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;&lt;a href=&quot;https://arxiv.org/abs/1711.10160&quot;&gt;Snorkel: Rapid Training Data Creation with Weak Supervision&lt;/a&gt;&lt;/em&gt; (VLDB 2018)&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;&lt;a href=&quot;https://papers.nips.cc/paper/6523-data-programming-creating-large-training-sets-quickly&quot;&gt;Data Programming: Creating Large Training Sets, Quickly&lt;/a&gt;&lt;/em&gt; (NeurIPS 2016)&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;&lt;a href=&quot;https://arxiv.org/abs/1810.02840&quot;&gt;Training Complex Models with Multi-Task Weak Supervision&lt;/a&gt;&lt;/em&gt; (AAAI 2019)&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;&lt;a href=&quot;https://ajratner.github.io/assets/papers/software_2_mmt_vision.pdf&quot;&gt;The Role of Massively Multi-Task and Weak Supervision in Software 2.0&lt;/a&gt;&lt;/em&gt; (CIDR 2019)&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Yash Agrawal</name></author><category term="machinelearning" /><summary type="html">A system for rapidly creating training sets with weak supervision</summary></entry><entry><title type="html">GSoC Final Report</title><link href="https://yashagrawal3.github.io/gsoc-finalreport" rel="alternate" type="text/html" title="GSoC Final Report" /><published>2018-08-13T15:30:00+05:30</published><updated>2018-08-13T15:30:00+05:30</updated><id>https://yashagrawal3.github.io/gsoc-finalreport</id><content type="html" xml:base="https://yashagrawal3.github.io/gsoc-finalreport">&lt;p&gt;This blog includes my work summary and my experience during Google Summer of Code’18 with Sugar Labs.&lt;/p&gt;
 
 &lt;p&gt;I am in the final phase of completing my project “Say no to Gtk2”, which includes The Porting of a few popular activities of sugarlabs from Gtk2 and GST0.10 to Gtk3 and GST1.0. It also included porting all activities to current standards followed by Sugar Labs to keep proper maintenance track of the activity. All students will now be able to use these activities again.&lt;/p&gt;
 
@@ -325,49 +431,4 @@
 
 &lt;h3 id=&quot;pyeyes-activity&quot;&gt;Pyeyes Activity&lt;/h3&gt;
 
-&lt;p&gt;This is a small activity with simple functions, Most of work in the GTK+ 3 port of this activity was also done in this week.&lt;/p&gt;</content><author><name>Yash Agrawal</name></author><category term="Gsoc" /><summary type="html">This is my third GSoC blog which tells work done this week.</summary></entry><entry><title type="html">GSoC Blog - Week 1</title><link href="https://yashagrawal3.github.io/gsoc-week1" rel="alternate" type="text/html" title="GSoC Blog - Week 1" /><published>2018-05-14T15:30:00+05:30</published><updated>2018-05-14T15:30:00+05:30</updated><id>https://yashagrawal3.github.io/gsoc-week1</id><content type="html" xml:base="https://yashagrawal3.github.io/gsoc-week1">&lt;p&gt;This is my second GSoC blog which focuses on the workflow involved to porting a activity to gtk+ 3.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;As the world changes, Sugar cannot stand still. If the platforms we depend upon drop support for the version tools we are using, then we have to either take over maintenance of these tools ourselves as proposed, update our work so that it remains compatible. The migration to GTK-3 is critical.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;As the project description says “GTK+ 2 and GStreamer 0.10 are end of life. We need to upgrade the remaining activities with these dependencies.”, we need to upgrade the Sugar activities to maintain its support and get security update on various platforms. The movement from PyGTK to PyGObject API means no more maintenance of it. GTK+ 3 is a major new version of GTK+ that breaks both API and ABI compared to GTK+ 2, which has remained API- and ABI-stable for a long time. The main purpose of this project is to port dependencies of 25 Sugar activities from “GTK+ 2 and GStreamer 0.10” to “GTK+ 3 and GStreamer 1.0”. The task will be accompanied by updating to the latest version of sugargame and Sugar Toolkit. GTK+ 3 introduced many changes to improve UI by providing a number of new widgets, switches, toolbars etc. A lot of other changes have also been introduced, to name a few: Use of Cairo for Drawing, Use of GtkBox, Removal of HippoCanvas library and many more.&lt;/p&gt;
-
-&lt;p&gt;The import of pygtk should be changed to import gi. All the codes which includes gtk should be replaced by Gtk. And there is no gtk.gdk library maintained by the developers so you should replace gtk.gdk with Gdk. All the imports should be changed from &lt;code class=&quot;highlighter-rouge&quot;&gt;import gtk&lt;/code&gt; to from &lt;code class=&quot;highlighter-rouge&quot;&gt;gi.repository import Gtk&lt;/code&gt;. All the imports from sugar should be changed to sugar3. As sugar3 toolkit is based on Gtk3 and sugar toolkit was based on gtk2 so Use sugar3 toolkit.&lt;/p&gt;
-
-&lt;p&gt;For example :&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;– import pygtk
-– pygtk.require(‘2.0‘)
-– import gtk
-– from sugar.graphics import style
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;should be replaced by :&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;+ import gi
-+ gi.require_version(“Gtk“, “3.0“)
-+ from gi.repository import Gdk
-+ from gi.repository import Gtk
-+ from sugar3.graphics import style
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Hbox, Vbox, pack_start, pack_end : This method pack_start, end takes 4 parameters :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;widget to pack&lt;/li&gt;
-  &lt;li&gt;expand&lt;/li&gt;
-  &lt;li&gt;fill&lt;/li&gt;
-  &lt;li&gt;padding&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Earlier in pygtk it was optional to specify every parameter. If not specified default values were used. But in Gtk3 it is complusory to specify all the 4 parameters. So while porting to Gtk3 if a parameter is not specified in pygtk you can add that parameter and put the default value to it.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;If expand was not set, use value True&lt;/li&gt;
-  &lt;li&gt;If fill was not set, use value True.&lt;/li&gt;
-  &lt;li&gt;If padding was not set, use value 0.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;For example :
-&lt;code class=&quot;highlighter-rouge&quot;&gt;– box.pack_start(widget, True, False)&lt;/code&gt;
-Should be changed to :
-&lt;code class=&quot;highlighter-rouge&quot;&gt;+ box.pack_start(widget, expand=True, fill=False, padding=4)&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;A great guide for porting to gtk+ 3 can be found in sugar-docs.&lt;/p&gt;</content><author><name>Yash Agrawal</name></author><category term="Gsoc" /><summary type="html">This is my second GSoC blog which focuses on the workflow involved to porting a activity to gtk+ 3.</summary></entry></feed>
+&lt;p&gt;This is a small activity with simple functions, Most of work in the GTK+ 3 port of this activity was also done in this week.&lt;/p&gt;</content><author><name>Yash Agrawal</name></author><category term="Gsoc" /><summary type="html">This is my third GSoC blog which tells work done this week.</summary></entry></feed>
