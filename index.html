@@ -103,6 +103,7 @@ into the {body} of the default.hbs template -->
                 
             </h1>
             <h2 class="site-description">Developer. Data Science. Open Source Enthusiast.</h2>
+            <span id="spanfarzi" style="opacity: 0; font-size:1px">Yash Agrawal. IIT Roorkee. GSOC. Google Summer of Code. Fidelity. Roorkee. Yash. Agrawal. Electronics And Communication</span>
         </div>
         <nav class="site-nav">
     <div class="site-nav-left">
@@ -136,7 +137,14 @@ into the {body} of the default.hbs template -->
 
     </div>
 </header>
-
+<style>
+    @media screen and (max-width: 600px) {
+      #spanfarzi {
+        visibility: hidden;
+        display: none;
+      }
+    }
+</style>
 <!-- The main content area -->
 <main id="site-main" class="site-main outer" role="main">
     <div class="inner">
@@ -164,7 +172,7 @@ into the {body} of the default.hbs template -->
                     <h2 class="post-card-title">Snorkeling with Data</h2>
                 </header>
                 <section class="post-card-excerpt">
-                    <p>A system for rapidly creating training sets with weak supervision As name of the paper suggests “Snorkel: A System for Fast Training Data Creation”, Snorkel is a tool used for rapid creation of</p>
+                    <p>A system for rapidly creating training sets with weak supervision As the name of the paper suggests “Snorkel: A System for Fast Training Data Creation”, Snorkel is a tool used for rapid creation</p>
                 </section>
             </a>
             <footer class="post-card-meta">

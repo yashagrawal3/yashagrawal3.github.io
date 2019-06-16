@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://yashagrawal3.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://yashagrawal3.github.io/" rel="alternate" type="text/html" /><updated>2019-06-11T01:05:10+05:30</updated><id>https://yashagrawal3.github.io/</id><title type="html">Yash Agrawal</title><subtitle>Developer. Data Science. Open Source Enthusiast.</subtitle><entry><title type="html">Snorkeling with Data</title><link href="https://yashagrawal3.github.io/snorkeling-with-data" rel="alternate" type="text/html" title="Snorkeling with Data" /><published>2019-06-04T15:30:00+05:30</published><updated>2019-06-04T15:30:00+05:30</updated><id>https://yashagrawal3.github.io/snorkeling-with-data</id><content type="html" xml:base="https://yashagrawal3.github.io/snorkeling-with-data">&lt;p&gt;A system for rapidly creating training sets with weak supervision&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://yashagrawal3.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://yashagrawal3.github.io/" rel="alternate" type="text/html" /><updated>2019-06-16T21:36:58+05:30</updated><id>https://yashagrawal3.github.io/</id><title type="html">Yash Agrawal</title><subtitle>Developer. Data Science. Open Source Enthusiast.</subtitle><entry><title type="html">Snorkeling with Data</title><link href="https://yashagrawal3.github.io/snorkeling-with-data" rel="alternate" type="text/html" title="Snorkeling with Data" /><published>2019-06-04T15:30:00+05:30</published><updated>2019-06-04T15:30:00+05:30</updated><id>https://yashagrawal3.github.io/snorkeling-with-data</id><content type="html" xml:base="https://yashagrawal3.github.io/snorkeling-with-data">&lt;p&gt;A system for rapidly creating training sets with weak supervision&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;./assets/images/snorkelfull.png&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;As name of the paper suggests “&lt;em&gt;Snorkel: A System for Fast Training Data Creation&lt;/em&gt;”, Snorkel is a tool used for rapid creation of training datasets without hand labeling thousands of data points. With the increas in intricacies of state-of-the-art machine learning models, the requirement of large data also becomes a necessity. In todays scenario, labeling training data is increasingly the largest bottleneck in deploying machine learning systems. Snorkel introduces a whole new paradigm of &lt;strong&gt;Data Programming&lt;/strong&gt;, instead of making users handlabel the data, it makes users write labeling function that express arbitrary heuristics, which can have unknown accuracies and correlations, to assign labels to the data. Training set prepared by Snorkel had been proven to be much more effective and has increased predictive performance 45% (on average) and speeded up the process by 2.8x (on average) against the training set obtained by hand labeling the data.&lt;/p&gt;
+&lt;p&gt;As the name of the paper suggests “&lt;em&gt;Snorkel: A System for Fast Training Data Creation&lt;/em&gt;”, Snorkel is a tool used for rapid creation of training datasets without hand labelling thousands of data points. With the increase in intricacies of state-of-the-art machine learning models, the requirement of large data also becomes a necessity. In today’s scenario, labelling training data is increasingly the largest bottleneck in deploying machine learning systems. Snorkel introduces a whole new paradigm of &lt;strong&gt;Data Programming&lt;/strong&gt;, instead of making users hand-label the data, it makes users write labelling function that expresses arbitrary heuristics, which can have unknown accuracies and correlations, to assign labels to the data. Training set prepared by Snorkel had been proven to be much more effective and has increased predictive performance 45% (on average) and speeded up the process by 2.8x (on average) against the training set obtained by hand labelling the data.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;./assets/images/mlchain.PNG&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;For training standard machine learning model, we usually need a well structured data that are easy to process. But what if we want to extract our training data from a bunch of newspapers, scientific papers, Medical images? This type of data is refereed to as &lt;strong&gt;Dark Data&lt;/strong&gt;. Snorkel is capable of providing us a with well structured labelled data by process called &lt;strong&gt;Dark Data Extraction&lt;/strong&gt;. This gives us a noise aware data that is capable of training high performance predictive model.&lt;/p&gt;
+&lt;p&gt;For training standard machine learning model, we usually need a well-structured data that are easy to process. But what if we want to extract our training data from a bunch of newspapers, scientific papers, Medical images? This type of data is referred to as &lt;strong&gt;Dark Data&lt;/strong&gt;. Snorkel is capable of providing us with a well structured labelled data by a process called &lt;strong&gt;Dark Data Extraction&lt;/strong&gt;. This gives us a noise aware data that is capable of training high-performance predictive model.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;./assets/images/darkdata.PNG&quot; /&gt;&lt;/p&gt;
 
@@ -14,7 +14,7 @@
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Bring All Sources to Bear:&lt;/strong&gt; System should enable user to all sources of weak supervision available to create Labeling functions.&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Bring All Sources to Bear:&lt;/strong&gt; System should enable a user to all sources of weak supervision available to create Labeling functions.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;Training Data as the Interface to ML:&lt;/strong&gt; The system should model label sources to produce a single, probabilistic label for each data point and train any of a wide range of classifiers to generalize beyond those sources.&lt;/p&gt;
@@ -30,7 +30,7 @@
 
 &lt;p&gt;&lt;img src=&quot;./assets/images/structure.PNG&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Workflow of snorkel proceeds in three main stages:&lt;/p&gt;
+&lt;p&gt;The workflow of snorkel proceeds in three main stages:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;Writing Labeling Functions&lt;/strong&gt;&lt;/li&gt;
@@ -47,52 +47,52 @@
   &lt;li&gt;&lt;strong&gt;Knowledge Base:&lt;/strong&gt; A repository of structured information&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Let’s consider a task of building &lt;em&gt;a knowledge base of married couples&lt;/em&gt; by extracting mentions of spouses from news source. We will use Data Programming approach and try to get heuristics based noisy label data.&lt;/p&gt;
+&lt;p&gt;Let’s consider a task of building &lt;em&gt;a knowledge base of married couples&lt;/em&gt; by extracting mentions of spouses from the news source. We will use Data Programming approach and try to get heuristics based noisy label data.&lt;/p&gt;
 
 &lt;h3 id=&quot;1-writing-labeling-functions&quot;&gt;1. Writing Labeling Functions&lt;/h3&gt;
 
-&lt;p&gt;First task is to get entities from the given data and there are multiple ways to shortlist entities from the corpus. We can use &lt;em&gt;Spacy’s&lt;/em&gt; noun-phrase chunking or can use some existing knowledge base to get entities. We can then pair these entities to get all candidates which will be labeled in following steps, here candidates are pairs of people mentioned in sentences. Now our task is to find if these candidates are spouse of each other or not.&lt;/p&gt;
+&lt;p&gt;The first task is to get entities from the given data and there are multiple ways to shortlist entities from the corpus. We can use &lt;em&gt;Spacy’s&lt;/em&gt; noun-phrase chunking or can use some existing knowledge base to get entities. We can then pair these entities to get all candidates which will be labelled in the following steps, here candidates are pairs of people mentioned in sentences. Now our task is to find if these candidates are a spouse of each other or not.&lt;/p&gt;
 
-&lt;p&gt;Humans can use real-world knowledge, context and common-sense heuristics to assign a label to candidate. We will use these abilities to write a number of labeling functions. Some of the approaches for Declarative labeling functions are:&lt;/p&gt;
+&lt;p&gt;Humans can use real-world knowledge, context and common-sense heuristics to assign a label to a candidate. We will use these abilities to write a number of labelling functions. Some of the approaches for Declarative labelling functions are:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Pattern Based :&lt;/strong&gt; Use heuristics and common pattern to write labeling function&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Pattern Based:&lt;/strong&gt; Use heuristics and common pattern to write labelling function&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Distant Supervision:&lt;/strong&gt; Use any existing knowledge base to label candidates&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Weak Classifiers:&lt;/strong&gt; Classifiers that are insufficient for our task and provides us a noisy label.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Labeling Function Generator:&lt;/strong&gt; It’s a inbuilt Snorkel tool which generates multiple labeling functions from a single resource, such as crowd-sourced labels.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Weak Classifiers:&lt;/strong&gt; Classifiers that are insufficient for our task and provides us with a noisy label.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Labeling Function Generator:&lt;/strong&gt; It’s an inbuilt Snorkel tool which generates multiple labelling functions from a single resource, such as crowd-sourced labels.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Labeling Functions will label candidates as &lt;em&gt;positive(1)&lt;/em&gt;, &lt;em&gt;negative(-1)&lt;/em&gt; or &lt;em&gt;abstain(0)&lt;/em&gt; in this case.&lt;/p&gt;
 
-&lt;p&gt;Using Pattern Based approach, we can write LFs using following heuristics:&lt;/p&gt;
+&lt;p&gt;Using the Pattern Based approach, we can write labelling functions using the following heuristics:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Mention of “Husband” and “Wife” in a sentence : 1&lt;/li&gt;
-  &lt;li&gt;Mention of “Spouse” in a sentence : 1&lt;/li&gt;
-  &lt;li&gt;Surnames of both entities being same : 1&lt;/li&gt;
-  &lt;li&gt;Mention of keywords like “Boyfriend”, “Girlfriend”, “Boss” : -1&lt;/li&gt;
-  &lt;li&gt;Mention of “are married” keyword : 1&lt;/li&gt;
+  &lt;li&gt;Mention of “Husband” and “Wife” in a sentence: 1&lt;/li&gt;
+  &lt;li&gt;Mention of “Spouse” in a sentence: 1&lt;/li&gt;
+  &lt;li&gt;Surnames of both entities being the same: 1&lt;/li&gt;
+  &lt;li&gt;Mention of keywords like “Boyfriend”, “Girlfriend”, “Boss”: -1&lt;/li&gt;
+  &lt;li&gt;Mention of “is/are married” keyword: 1&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;We can also use a knowledge base of famous married people to create a labeling function, for eg. we know “&lt;em&gt;Barack Obama&lt;/em&gt;” and “&lt;em&gt;Michelle Obama&lt;/em&gt;” are married, so we can directly assign positive label to it.&lt;/p&gt;
+&lt;p&gt;We can also use a knowledge base of famous married people to create a labelling function, for eg. we know “&lt;em&gt;Barack Obama&lt;/em&gt;” and “&lt;em&gt;Michelle Obama&lt;/em&gt;” are married, so we can directly assign a positive label to it.&lt;/p&gt;
 
 &lt;h3 id=&quot;2-modeling-accuracies-and-correlations&quot;&gt;2. Modeling Accuracies and Correlations&lt;/h3&gt;
 
-&lt;p&gt;We asses the quality of our labeling functions on following metrics:&lt;/p&gt;
+&lt;p&gt;We asses the quality of our labelling functions on the following metrics:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Accuracy:&lt;/strong&gt;  The percentage of candidates  labeling function labels correctly&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Coverage:&lt;/strong&gt; The percentage of all candidates  that are labeled by more the one LF&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Accuracy:&lt;/strong&gt;  The percentage of candidates labelling function labels correctly&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Coverage:&lt;/strong&gt; The percentage of all candidates  that are labelled by more the one labelling function&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Conflict:&lt;/strong&gt; The percentage of candidates with more than one labels that disagree&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Ideally, we want high-coverage and high-accuracy LFs but LFs with probability better than random chance will work and improve final result. Having conflicts is actually good because it allows our learn information about the LFs.&lt;/p&gt;
+&lt;p&gt;Ideally, we want high-coverage and high-accuracy labelling functions but labelling functions with probability better than random chance will work and improve the final result. Having conflicts is actually good because it allows our model to learn information about the labelling functions.&lt;/p&gt;
 
-&lt;p&gt;Next step to make a &lt;strong&gt;Generative Model&lt;/strong&gt; to unify all weak supervision we have provided. To get an intuition of this, we can assume every LF as a vote and we need to find weighted majority vote. As &lt;strong&gt;Condorcet’s Jury Theorem&lt;/strong&gt; states ‘As long as most people vote correctly, adding  more people improves the accuracy of majority vote’, so more the number of LFs, better the result. Every LF has its own latent accuracies which can be learned using overlap and conflicts with other LFs. So, if a LFs make correlated decision, without knowing if right or wrong, that LF will be assigned a higher weight. In the end, we will have a matrix will each labeling function assigned a weight. Usually, this step is iterated a few times to get improved results.&lt;/p&gt;
+&lt;p&gt;Next step to make a &lt;strong&gt;Generative Model&lt;/strong&gt; to unify all weak supervision we have provided. To get an intuition of this, we can assume every labelling function as a vote and we need to find a weighted majority vote. As &lt;strong&gt;Condorcet’s Jury Theorem&lt;/strong&gt; states ‘As long as most people vote correctly, adding more people improves the accuracy of majority vote’, so more the number of s, better the result. Every labelling function has its own latent accuracies which can be learned using overlap and conflicts with other labelling functions. So, if a labelling function makes a correlated decision, without knowing if right or wrong, that labelling function will be assigned a higher weight. In the end, we will have a matrix will each labelling function assigned a weight. Usually, this step is iterated a few times to get improved results.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;./assets/images/pipeline.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;3-training-a-discriminative-model&quot;&gt;3. Training a Discriminative Model&lt;/h3&gt;
 
-&lt;p&gt;Last part of the pipeline is the fastest one. The output of the generative model is a set of &lt;strong&gt;probabilistic training labels&lt;/strong&gt;, we now want to use these to train our final Noise-aware discriminative model. We can use techniques like &lt;em&gt;Logistic Regression, SVMs, LSTM&lt;/em&gt; at this stage. The discriminative model learns feature representation of our LFs and this makes it better able to generalize to unseen candidates. This increases recall significantly and gives the final output.&lt;/p&gt;
+&lt;p&gt;Last part of the pipeline is the fastest one. The output of the generative model is a set of &lt;strong&gt;probabilistic training labels&lt;/strong&gt;, we now want to use these to train our final Noise-aware discriminative model. We can use techniques like &lt;em&gt;Logistic Regression, SVMs, LSTM&lt;/em&gt; at this stage. The discriminative model learns feature representation of our labelling functions and this makes it better able to generalize to unseen candidates. This increases recall significantly and give the final output.&lt;/p&gt;
 
 &lt;p&gt;There is so much more to snorkel that cannot be covered in this blog. Snorkel derivatives like &lt;em&gt;Snorkel Metal&lt;/em&gt; and &lt;em&gt;Snorkel Drybell&lt;/em&gt; have gone further to improve both speed and accuracy of the result.&lt;/p&gt;
 
